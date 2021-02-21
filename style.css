@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* utility  */
+.main-container{
+    max-width: 1200px;
+    margin: auto;
+}
+
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    font-family: 400;
+}
+a:hover{
+    color: white !important;
+}
+
+.btn{
+    border: 1px solid white;
+    padding: 10px 20px;
+    color: white;
+    display: inline-block;
+    letter-spacing: 2px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.3s linear;
+}
+
+
+.btn-primary{
+    background-color: white;
+    color: black !important;
+}
+
+.btn-primary:hover{
+    background-color: transparent;
+    color:white !important;
+    border: 1px solid white;
+}
+
+.btn-secondary:hover{
+    background-color: white;
+    color: black !important;
+}
+
+
+
+/* hero section  */
+
+.hero{
+    height: 100vh;
+    width: 100vw;
+    background: rgba(0, 0, 00, 0.45) url('./img/hero.jpg')no-repeat center center/cover;
+    background-blend-mode: darken;
+    position: relative;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    height: 10vh;
+    align-items: center;
+}
+
+.navLinks{
+    display: flex;
+    align-items: center;
+}
+
+.navLinks li{
+    margin-right: 1.5rem;
+}
+
+.navLinks li a{
+    color: rgba(255, 255, 255, 0.70);
+    font-size: 14px;
+}
+
+.hero-container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 85%;
+    /* background-color: lightblue; */
+    height: 50vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.video-container{
+    /* background-color: lightblue; */
+    display: flex;
+    align-items: flex-end;
+    justify-content: start;
+    color: #c9cfd7;
+    padding: 1rem;
+}
+.play-btn{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.video-container .fas{
+    color: white;
+    margin-right: 1rem;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+.video-container span{
+    font-size: 14px;
+}
+
+.video-container .fas:hover{
+    color: #e2564d;
+}
+
+.text-container{
+    /* background-color: lightcoral; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.text-container h1{
+    font-size: 3rem;
+    color: white;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+.text-container p{
+    color: #c9cfd7;
+    font-size: 14px;
+    margin-bottom: 1rem;
+    line-height: 1.7;
+    width: 550px;
+}
+.text-container .btn{
+    margin-top: 1rem;
+}
